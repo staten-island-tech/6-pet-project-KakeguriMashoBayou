@@ -14,8 +14,9 @@ class Pokemon:
    def the_status(self):
       if self.__status in status_list:
          self.__health -= 20
-         print("health:", self.__health)
-      self.__health = max(0, min(100, self.__health))
+         self.__health = max(0,self.__health)
+         print(f"{self.name} is {self.__status}!")
+         print("Health:", self.__health)
       if self.__health <=0:
          print("your pokemon is dead, dig a grave for it")
       elif self.__health <30:
@@ -23,6 +24,8 @@ class Pokemon:
       elif self.__health <80:
          print("your pokemon has a bruise")
 random_status = random.choice(status_list)
+my_pokemon = Pokemon(name, 100, 50, random_status, 80)
+my_pokemon.the_status()
 
    def give_food(self):
       person = int(input("your pet is starving how much food are you giving your pet"))
