@@ -23,12 +23,19 @@ class Pokemon:
          print("your pokemon is severly damaged")
       elif self.__health <80:
          print("your pokemon has a bruise")
+      
+      def give_food(self):
+          person = int(input("your pet is starving how much food are you giving your pet"))
+          user -= person
+          if person 
+
+
 random_status = random.choice(status_list)
 my_pokemon = Pokemon(name, 100, 50, random_status, 80)
 my_pokemon.the_status()
 
-   def give_food(self):
-      person = int(input("your pet is starving how much food are you giving your pet"))
+        
+
       
    
    
